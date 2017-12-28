@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
     string pluginPath(argv[1]);
 
     Plugin::PluginLoader<Plugin::IPlugin> loader(pluginPath);
-    Plugin::IPlugin* plugin = NULL;
+    Plugin::IPlugin* plugin = nullptr;
 
     bool isLoaded = loader.load();
 
