@@ -38,4 +38,7 @@ int main(int argc, char* argv[])
         cout << "Reason = " << loader.getErrorMsg() << endl;
     }
     return 0;
+
+    bool isUnloaded = loader.unload();
+    return isUnloaded ? 0 : -1;
 }
